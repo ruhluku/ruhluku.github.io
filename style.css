@@ -70,12 +70,21 @@ section h2 {
 .services-list ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: left; /* Align services list to the left */
 }
 
 .services-list li {
     margin-bottom: 15px;
     font-size: 1.1em;
+    position: relative; /* For the bullet point style */
+    padding-left: 25px; /* Space for the bullet point */
+}
+
+.services-list li::before {
+    content: "→"; /* Arrow bullet point */
+    position: absolute;
+    left: 0;
+    color: #2575fc; /* Matching the button color */
 }
 
 .button {
@@ -100,7 +109,16 @@ footer {
     color: #777;
 }
 
-/* Add Responsive Design Here */
+#contact {
+    background: linear-gradient(to right, #e6f7ff, #f0f0ff); /* Light gradient background */
+    text-align: center; /* Center contact info */
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
         padding: 60px 0;
@@ -110,5 +128,8 @@ footer {
     }
     .container {
         padding: 15px;
+    }
+    .services-list ul {
+        text-align: left; /* Ensure left alignment on smaller screens */
     }
 }
