@@ -1,89 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruhl (Luqman) Mpinga - Technical Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Ruhl (Luqman) Mpinga</h1>
-            <p>Technical Engineer | Innovative Solutions</p>
-        </div>
-    </header>
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
 
-    <section id="skills" class="container">
-        <h2>My Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <img src="images/autocad.png" alt="AutoCAD">
-                <h3>AutoCAD</h3>
-                <p>Detailed drafting, 2D/3D modeling, and customization.</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/civil3d.png" alt="Civil 3D">
-                <h3>Civil 3D</h3>
-                <p>Road design, site grading, and infrastructure projects.</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/revit.png" alt="Revit">
-                <h3>Revit</h3>
-                <p>BIM modeling, architectural and building services design.</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/qgis.png" alt="QGIS">
-                <h3>QGIS</h3>
-                <p>Geospatial analysis, map creation, and data management.</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/sewercad.png" alt="SewerCAD">
-                <h3>SewerCAD</h3>
-                <p>Sanitary sewer system design and analysis.</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/watercad.png" alt="WaterCAD">
-                <h3>WaterCAD</h3>
-                <p>Water distribution network modeling and analysis.</p>
-            </div>
-            <div class="skill-item">
-                <img src="images/epanet.png" alt="EPANET">
-                <h3>EPANET</h3>
-                <p>Hydraulic analysis of water distribution systems.</p>
-            </div>
-        </div>
-    </section>
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    <section id="services" class="container">
-        <h2>My Services</h2>
-        <div class="services-list">
-            <ul>
-                <li>Infrastructure Design & Analysis: Comprehensive design and analysis for civil and environmental projects.</li>
-                <li>Hydraulic Modeling & Design: Utilizing SewerCAD, WaterCAD, and EPANET for water and wastewater systems.</li>
-                <li>GIS & Spatial Analysis: Using QGIS for site analysis, resource mapping, and environmental assessments.</li>
-                <li>AutoCAD & Civil 3D Drafting: Creating detailed plans and designs for infrastructure and development projects.</li>
-                <li>Revit BIM Modeling & Building Services: Implementing BIM for architectural and building services engineering.</li>
-                <li>Environmental Engineering Solutions: Addressing water resources, wastewater treatment, and solid waste management.</li>
-                <li>Technical Project Management & Planning: Assisting in the design and implementation of technical projects.</li>
-                <li>Technical Tutoring & Training: Providing guidance on engineering software and principles.</li>
-            </ul>
-        </div>
-    </section>
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
 
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <p>Ready to collaborate on your technical projects? Reach out for freelance assistance.</p>
-        <p>Email: <a href="mailto:mpingaruhl@gmail.com">mpingaruhl@gmail.com</a></p>
-        <p>WhatsApp: <a href="https://wa.me/255759001714">(+255) 759 001 714</a></p>
-    </section>
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
 
-    <footer>
-        <p>&copy; 2025 Ruhl (Luqman) Mpinga. All rights reserved.</p>
-    </footer>
+header p {
+    font-size: 1.2em;
+}
 
-</body>
-</html>
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #444;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.skill-item {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.skill-item h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.services-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align services list to the left */
+}
+
+.services-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    position: relative; /* For the bullet point style */
+    padding-left: 25px; /* Space for the bullet point */
+}
+
+.services-list li::before {
+    content: "→"; /* Arrow bullet point */
+    position: absolute;
+    left: 0;
+    color: #2575fc; /* Matching the button color */
+}
+
+.button {
+    display: inline-block;
+    background: #2575fc;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1a52b8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+    color: #777;
+}
+
+#contact {
+    background: linear-gradient(to right, #e6f7ff, #f0f0ff); /* Light gradient background */
+    text-align: center; /* Center contact info */
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 60px 0;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    .container {
+        padding: 15px;
+    }
+    .services-list ul {
+        text-align: left; /* Ensure left alignment on smaller screens */
+    }
+}
