@@ -1,191 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ruhl (Luqman) Mpinga - Technical Engineer</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ruhl (Luqman) Mpinga – Technical Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Google Calendar Appointment Scheduling begin -->
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+  <script>
+    (function () {
+      var target = document.currentScript;
+      window.addEventListener("load", function () {
+        calendar.schedulingButton.load({
+          url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3UR-ajCWUUPTrHuBzSkMIikoY5IU8wWpj5Oxxt_qnPisxN1SWBBHeaYP8xYhLu9rai6ARjrcBB?gv=true",
+          color: "#039BE5",
+          label: "Book an appointment",
+          target,
+        });
+      });
+    })();
+  </script>
+  <!-- end Google Calendar Appointment Scheduling -->
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
       background: #f9f9f9;
-      color: #333;
+      color: #222;
     }
     header {
-      background: #007acc;
-      color: #fff;
-      padding: 20px;
+      background: #039BE5;
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
     }
     .section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 2rem 1rem;
+      max-width: 1000px;
       margin: auto;
     }
-    .section h2 {
-      color: #007acc;
-      border-bottom: 2px solid #007acc;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-    .swiper {
-      width: 100%;
-      padding: 20px 0;
-    }
-    .swiper-slide {
-      text-align: center;
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .swiper-slide img {
-      max-width: 100px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-    .screenshot-placeholder {
-      width: 100%;
-      height: 180px;
-      background-color: #e0e0e0;
+    .software-logos {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: center;
-      color: #777;
-      border-radius: 4px;
-      font-size: 14px;
-      margin-top: 10px;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .software-logos img {
+      height: 50px;
+      object-fit: contain;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    .slide {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      width: 300px;
+      text-align: center;
+    }
+    .slide img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background: #007acc;
-      color: #fff;
+      padding: 2rem 1rem;
+      background: #e0e0e0;
     }
-    a {
-      color: #007acc;
-      text-decoration: none;
+    .contact {
+      margin-top: 1rem;
     }
-    a:hover {
-      text-decoration: underline;
+    .contact p {
+      margin: 0.3rem 0;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Ruhl (Luqman) Mpinga</h1>
-    <p>Technical Engineer | GIS • CAD </p>
+    <h3>Technical Engineer</h3>
   </header>
-<div class="section">
-  <h2>👋 About Me</h2>
-  <p> I provide support in GIS, CAD, and infrastructure design — from modeling to documentation — to help move your project forward smoothly and efficiently.</p>
-  <p>Whether it's mapping, modeling, or modifying, I’ve got your back.</p>
-</div>
-
 
   <div class="section">
-    <h2>🛠 Software Proficiency</h2>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <!-- Repeat this slide for each software -->
-        <div class="swiper-slide">
-          <img src="images/qgis.png" alt="QGIS Logo">
-          <div class="screenshot-placeholder">QGIS Screenshot</div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/epanet.png" alt="EPANET Logo">
-          <div class="screenshot-placeholder">EPANET Screenshot</div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/watercad.png" alt="WaterCAD Logo">
-          <div class="screenshot-placeholder">WaterCAD Screenshot</div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/sewercad.png" alt="SewerCAD Logo">
-          <div class="screenshot-placeholder">SewerCAD Screenshot</div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/stormcad.png" alt="StormCAD Logo">
-          <div class="screenshot-placeholder">StormCAD Screenshot</div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/sewergems.png" alt="SewerGEMS Logo">
-          <div class="screenshot-placeholder">SewerGEMS Screenshot</div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/revit.png" alt="Revit Logo">
-          <div class="screenshot-placeholder">Revit Screenshot</div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/autocad.png" alt="AutoCAD Logo">
-          <div class="screenshot-placeholder">AutoCAD Screenshot</div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/civil3d.png" alt="Civil 3D Logo">
-          <div class="screenshot-placeholder">Civil 3D Screenshot</div>
-        </div>
+    <h2>👋 About Me</h2>
+    <p>I'm Ruhl (Luqman) Mpinga, a Technical Engineer currently studying Environmental Engineering at Ardhi University. I provide support in GIS, CAD, and infrastructure design — from modeling to documentation — to help move your project forward smoothly and efficiently.</p>
+    <p>Whether it's mapping, modeling, or modifying, I’ve got your back.</p>
+  </div>
+
+  <div class="section">
+    <h2>🧰 Software I Use</h2>
+    <div class="software-logos">
+      <img src="images/qgis.png" alt="QGIS" />
+      <img src="images/epanet.png" alt="EPANET" />
+      <img src="images/watercad.png" alt="WaterCAD" />
+      <img src="images/sewercad.png" alt="SewerCAD" />
+      <img src="images/stormcad.png" alt="StormCAD" />
+      <img src="images/sewergems.png" alt="SewerGEMS" />
+      <img src="images/revit.png" alt="Revit" />
+      <img src="images/autocad.png" alt="AutoCAD" />
+      <img src="images/civil3d.png" alt="Civil 3D" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🎬 What I Work On</h2>
+    <div class="carousel">
+      <div class="slide">
+        <img src="images/timelapses/qgis-pb-map.gif" alt="Mapping Pb Concentration">
+        <p>Pb Concentration Mapping – QGIS</p>
+      </div>
+      <div class="slide">
+        <img src="images/timelapses/epanet-water.gif" alt="EPANET Water Design">
+        <p>Water Supply Network – EPANET</p>
+      </div>
+      <div class="slide">
+        <img src="images/timelapses/sewercad.gif" alt="SewerCAD">
+        <p>Sewerage System Layout – SewerCAD</p>
+      </div>
+      <div class="slide">
+        <img src="images/timelapses/revit-mep.gif" alt="MEP in Revit">
+        <p>Residential MEP Design – Revit</p>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:mpingaruhl@gmail.com">mpingaruhl@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/255759001714" target="_blank">+255 759 001 714</a></p>
-
-    <!-- Google Calendar Appointment Scheduling begin -->
-    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-    <div id="calendar-button-placeholder"></div>
-    <script>
-      window.addEventListener('load', function () {
-        calendar.schedulingButton.load({
-          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3UR-ajCWUUPTrHuBzSkMIikoY5IU8wWpj5Oxxt_qnPisxN1SWBBHeaYP8xYhLu9rai6ARjrcBB?gv=true',
-          color: '#039BE5',
-          label: 'Book an appointment',
-          target: document.getElementById('calendar-button-placeholder'),
-        });
-      });
-    </script>
-    <!-- end Google Calendar Appointment Scheduling -->
+    <h2>📞 Contact Me</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:mpingaruhl@gmail.com">mpingaruhl@gmail.com</a></p>
+      <p>Phone: <a href="tel:+255759001714">+255 759 001 714</a></p>
+      <div style="margin-top: 1rem;">
+        <!-- Booking button appears here -->
+      </div>
+    </div>
   </div>
 
   <footer>
-    &copy; 2025 Ruhl (Luqman) Mpinga. All rights reserved.
+    <p>&copy; 2025 Ruhl (Luqman) Mpinga</p>
   </footer>
-
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop: true,
-      breakpoints: {
-        640: {
-          slidesPerView: 2
-        },
-        768: {
-          slidesPerView: 3
-        },
-        1024: {
-          slidesPerView: 4
-        }
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      }
-    });
-  </script>
-
 </body>
 </html>
