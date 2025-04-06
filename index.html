@@ -1,106 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ruhl (Luqman) Mpinga | Technical Engineer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruhl (Luqman) Mpinga - Technical Engineer</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <style>
     body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
-      color: #2c3e50;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: #3498db;
-      color: white;
-      padding: 40px 20px;
+      background: #007acc;
+      color: #fff;
+      padding: 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      font-size: 2em;
     }
     .section {
-      background-color: white;
-      padding: 25px;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
-    h2 {
-      color: #2980b9;
+    .section h2 {
+      color: #007acc;
+      border-bottom: 2px solid #007acc;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
     }
-    ul {
-      padding-left: 20px;
+    .swiper {
+      width: 100%;
+      padding: 20px 0;
+    }
+    .swiper-slide {
+      text-align: center;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .swiper-slide img {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .screenshot-placeholder {
+      width: 100%;
+      height: 180px;
+      background-color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-top: 10px;
     }
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 0.9rem;
-      color: #888;
+      background: #007acc;
+      color: #fff;
     }
     a {
-      color: #3498db;
+      color: #007acc;
       text-decoration: none;
     }
-
-    /* Slider styles */
-    .slider {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-    }
-    .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 100%;
-    }
-    .slide {
-      min-width: 100%;
-      box-sizing: border-box;
-      text-align: center;
-      padding: 20px;
-    }
-    .slide img.icon {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      margin-bottom: 10px;
-    }
-    .slide img.screenshot {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .slider-buttons {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .slider-buttons button {
-      background-color: #2980b9;
-      border: none;
-      color: white;
-      padding: 8px 12px;
-      margin: 0 5px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      .section {
-        padding: 15px;
-      }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -108,113 +83,102 @@
 
   <header>
     <h1>Ruhl (Luqman) Mpinga</h1>
-    <p>Technical Engineer – Supporting CAD, GIS, and Simulation Work</p>
+    <p>Technical Engineer | GIS • CAD • Environmental Design</p>
   </header>
 
-  <div class="container">
-
-    <div class="section">
-      <h2>👋 About Me</h2>
-      <p>I help engineers and students with CAD designs, GIS maps, and hydraulic simulations. Whether you’re stuck or just need a second pair of hands — I’ve got you.</p>
-    </div>
-
-    <div class="section">
-      <h2>🛠 Software I Work With</h2>
-
-      <div class="slider" id="toolSlider">
-        <div class="slides">
-          <div class="slide">
-            <img class="icon" src="images/qgis.png" alt="QGIS">
-            <p>QGIS</p>
-            <img class="screenshot" src="https://picsum.photos/600/400?random=1" alt="QGIS Screenshot">
-          </div>
-          <div class="slide">
-            <img class="icon" src="images/autocad.png" alt="AutoCAD">
-            <p>AutoCAD</p>
-            <img class="screenshot" src="https://picsum.photos/600/400?random=2" alt="AutoCAD Screenshot">
-          </div>
-          <div class="slide">
-            <img class="icon" src="images/revit.png" alt="Revit MEP">
-            <p>Revit MEP</p>
-            <img class="screenshot" src="https://picsum.photos/600/400?random=3" alt="Revit Screenshot">
-          </div>
-          <div class="slide">
-            <img class="icon" src="images/epanet.png" alt="EPANET / WaterCAD / SewerCAD">
-            <p>EPANET / WaterCAD / SewerCAD</p>
-            <img class="screenshot" src="https://picsum.photos/600/400?random=4" alt="EPANET Screenshot">
-          </div>
-          <div class="slide">
-            <img class="icon" src="images/civil3d.png" alt="Civil 3D">
-            <p>Civil 3D</p>
-            <img class="screenshot" src="https://picsum.photos/600/400?random=5" alt="Civil 3D Screenshot">
-          </div>
+  <div class="section">
+    <h2>🛠 Software Proficiency</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Repeat this slide for each software -->
+        <div class="swiper-slide">
+          <img src="images/qgis.png" alt="QGIS Logo">
+          <div class="screenshot-placeholder">QGIS Screenshot</div>
         </div>
-        <div class="slider-buttons">
-          <button onclick="prevSlide()">&#8592; Prev</button>
-          <button onclick="nextSlide()">Next &#8594;</button>
+        <div class="swiper-slide">
+          <img src="images/epanet.png" alt="EPANET Logo">
+          <div class="screenshot-placeholder">EPANET Screenshot</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/watercad.png" alt="WaterCAD Logo">
+          <div class="screenshot-placeholder">WaterCAD Screenshot</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/sewercad.png" alt="SewerCAD Logo">
+          <div class="screenshot-placeholder">SewerCAD Screenshot</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/stormcad.png" alt="StormCAD Logo">
+          <div class="screenshot-placeholder">StormCAD Screenshot</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/sewergems.png" alt="SewerGEMS Logo">
+          <div class="screenshot-placeholder">SewerGEMS Screenshot</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/revit.png" alt="Revit Logo">
+          <div class="screenshot-placeholder">Revit Screenshot</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/autocad.png" alt="AutoCAD Logo">
+          <div class="screenshot-placeholder">AutoCAD Screenshot</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/civil3d.png" alt="Civil 3D Logo">
+          <div class="screenshot-placeholder">Civil 3D Screenshot</div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section">
-      <h2>✅ What I Can Help With</h2>
-      <ul>
-        <li>CAD layouts for water supply and drainage systems</li>
-        <li>GIS mapping and spatial analysis</li>
-        <li>Water/wastewater system simulations</li>
-        <li>Revit MEP plumbing models</li>
-        <li>Excel-based engineering calculations</li>
-      </ul>
-    </div>
+  <div class="section">
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:mpingaruhl@gmail.com">mpingaruhl@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/255759001714" target="_blank">+255 759 001 714</a></p>
 
-    <div class="section">
-  <h2>📬 Contact</h2>
-  <p>Email: <a href="mailto:mpingaruhl@gmail.com">mpingaruhl@gmail.com</a></p>
-  <p>WhatsApp: <a href="https://wa.me/255759001714" target="_blank">+255 759 001 714</a></p>
-
-  <!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-
-<div id="calendar-button-placeholder"></div>
-
-<script>
-window.addEventListener('load', function() {
-  calendar.schedulingButton.load({
-    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3UR-ajCWUUPTrHuBzSkMIikoY5IU8wWpj5Oxxt_qnPisxN1SWBBHeaYP8xYhLu9rai6ARjrcBB?gv=true',
-    color: '#039BE5',
-    label: 'Book an appointment',
-    target: document.getElementById('calendar-button-placeholder'),
-  });
-});
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
-
-</div>
-
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <div id="calendar-button-placeholder"></div>
+    <script>
+      window.addEventListener('load', function () {
+        calendar.schedulingButton.load({
+          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3UR-ajCWUUPTrHuBzSkMIikoY5IU8wWpj5Oxxt_qnPisxN1SWBBHeaYP8xYhLu9rai6ARjrcBB?gv=true',
+          color: '#039BE5',
+          label: 'Book an appointment',
+          target: document.getElementById('calendar-button-placeholder'),
+        });
+      });
+    </script>
+    <!-- end Google Calendar Appointment Scheduling -->
+  </div>
 
   <footer>
-    &copy; 2025 Ruhl Mpinga | GitHub Pages Portfolio
+    &copy; 2025 Ruhl (Luqman) Mpinga. All rights reserved.
   </footer>
 
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
-    const slides = document.querySelector('.slides');
-    let index = 0;
-
-    function showSlide(i) {
-      index = (i + slides.children.length) % slides.children.length;
-      slides.style.transform = 'translateX(' + (-index * 100) + '%)';
-    }
-
-    function nextSlide() {
-      showSlide(index + 1);
-    }
-
-    function prevSlide() {
-      showSlide(index - 1);
-    }
-
-    showSlide(index);
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 2
+        },
+        768: {
+          slidesPerView: 3
+        },
+        1024: {
+          slidesPerView: 4
+        }
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      }
+    });
   </script>
 
 </body>
