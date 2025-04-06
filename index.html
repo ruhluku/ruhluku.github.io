@@ -51,9 +51,19 @@
       gap: 1.5rem;
       margin-top: 2rem;
     }
-    .software-logos img {
-      height: 50px;
+    .software-card {
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      width: 150px;
+      margin-bottom: 2rem;
+    }
+    .software-card img {
+      height: 60px;
       object-fit: contain;
+      margin-bottom: 1rem;
     }
     .carousel {
       display: flex;
@@ -95,22 +105,49 @@
 
   <div class="section">
     <h2>👋 About Me</h2>
-    <p>I'm Ruhl (Luqman) Mpinga, a Technical Engineer currently studying Environmental Engineering at Ardhi University. I provide support in GIS, CAD, and infrastructure design — from modeling to documentation — to help move your project forward smoothly and efficiently.</p>
+    <p>I provide support in GIS, CAD, and infrastructure design — from modeling to documentation — to help move your project forward smoothly and efficiently.</p>
     <p>Whether it's mapping, modeling, or modifying, I’ve got your back.</p>
   </div>
 
   <div class="section">
     <h2>🧰 Software I Use</h2>
     <div class="software-logos">
-      <img src="images/qgis.png" alt="QGIS" />
-      <img src="images/epanet.png" alt="EPANET" />
-      <img src="images/watercad.png" alt="WaterCAD" />
-      <img src="images/sewercad.png" alt="SewerCAD" />
-      <img src="images/stormcad.png" alt="StormCAD" />
-      <img src="images/sewergems.png" alt="SewerGEMS" />
-      <img src="images/revit.png" alt="Revit" />
-      <img src="images/autocad.png" alt="AutoCAD" />
-      <img src="images/civil3d.png" alt="Civil 3D" />
+      <div class="software-card">
+        <img src="images/qgis.png" alt="QGIS" />
+        <p>QGIS</p>
+      </div>
+      <div class="software-card">
+        <img src="images/epanet.png" alt="EPANET" />
+        <p>EPANET</p>
+      </div>
+      <div class="software-card">
+        <img src="images/watercad.png" alt="WaterCAD" />
+        <p>WaterCAD</p>
+      </div>
+      <div class="software-card">
+        <img src="images/sewercad.png" alt="SewerCAD" />
+        <p>SewerCAD</p>
+      </div>
+      <div class="software-card">
+        <img src="images/stormcad.png" alt="StormCAD" />
+        <p>StormCAD</p>
+      </div>
+      <div class="software-card">
+        <img src="images/sewergems.png" alt="SewerGEMS" />
+        <p>SewerGEMS</p>
+      </div>
+      <div class="software-card">
+        <img src="images/revit.png" alt="Revit" />
+        <p>Revit</p>
+      </div>
+      <div class="software-card">
+        <img src="images/autocad.png" alt="AutoCAD" />
+        <p>AutoCAD</p>
+      </div>
+      <div class="software-card">
+        <img src="images/civil3d.png" alt="Civil 3D" />
+        <p>Civil 3D</p>
+      </div>
     </div>
   </div>
 
@@ -142,7 +179,8 @@
       <p>Email: <a href="mailto:mpingaruhl@gmail.com">mpingaruhl@gmail.com</a></p>
       <p>Phone: <a href="tel:+255759001714">+255 759 001 714</a></p>
       <div style="margin-top: 1rem;">
-        <!-- Booking button appears here -->
+        <!-- Google Calendar appointment scheduling button -->
+        <div id="calendar-booking"></div>
       </div>
     </div>
   </div>
