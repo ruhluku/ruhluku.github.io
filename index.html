@@ -33,17 +33,31 @@
       background: #f9f9f9;
       color: #222;
     }
+
     header {
-      background: #039BE5;
+      background: linear-gradient(135deg, #039BE5, #00C8C8); /* Gradient background */
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
+      border-bottom: 4px solid #00C8C8;
     }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
     .section {
       padding: 2rem 1rem;
       max-width: 1000px;
       margin: auto;
     }
+
     .software-logos {
       display: flex;
       flex-wrap: wrap;
@@ -51,20 +65,28 @@
       gap: 1.5rem;
       margin-top: 2rem;
     }
+
     .software-card {
-      background: white;
+      background: #ffffff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      border-radius: 12px;
       padding: 1.5rem;
       text-align: center;
-      width: 150px;
-      margin-bottom: 2rem;
+      width: 180px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .software-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
     .software-card img {
       height: 60px;
       object-fit: contain;
       margin-bottom: 1rem;
     }
+
     .carousel {
       display: flex;
       overflow-x: auto;
@@ -72,27 +94,42 @@
       gap: 2rem;
       padding: 1rem 0;
     }
+
     .slide {
       flex: 0 0 auto;
       scroll-snap-align: start;
       width: 300px;
       text-align: center;
+      border-radius: 12px;
     }
+
     .slide img {
       max-width: 100%;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
       background: #e0e0e0;
     }
+
     .contact {
       margin-top: 1rem;
     }
+
     .contact p {
       margin: 0.3rem 0;
+    }
+
+    .contact a {
+      color: #039BE5;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -105,7 +142,7 @@
 
   <div class="section">
     <h2>👋 About Me</h2>
-    <p>I provide support in GIS, CAD, and infrastructure design — from modeling to documentation — to help move your project forward smoothly and efficiently.</p>
+    <p>I'm Ruhl (Luqman) Mpinga, a Technical Engineer currently studying Environmental Engineering at Ardhi University. I provide support in GIS, CAD, and infrastructure design — from modeling to documentation — to help move your project forward smoothly and efficiently.</p>
     <p>Whether it's mapping, modeling, or modifying, I’ve got your back.</p>
   </div>
 
